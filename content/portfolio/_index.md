@@ -1,4 +1,3 @@
 ---
 title: Newsletter
-description: AA
 ---
