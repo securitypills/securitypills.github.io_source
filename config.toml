@@ -1,0 +1,30 @@
+baseURL = 'https://securitypills.github.io/'
+languageCode = 'en-us'
+title = 'Security Pills'
+theme = 'digitalgarden'
+
+[Test.Author]
+	author = 'Edited by Sebas Guerrero'
+
+[Params.newsletter]
+  title = ""
+  description = 'A weekly newsletter for smart and curious people interested in security, technology, and smartcontracts'
+  path = "https://embeds.beehiiv.com/3645f86f-e3bb-46cb-adec-b3b2f20c9411?slim=true"
+
+[menu]
+[[menu.main]]
+	name = 'Home'
+	url = '/'
+	weight = 1
+[[menu.main]]
+	name = 'Blog'
+	url = '/articles'
+	weight = 2
+[[menu.main]]
+	name = 'Newsletter'
+	url = '/portfolio'
+	weight = 3
+[[menu.main]]
+	name = 'Sponsor'
+	url = '/sponsor'
+	weight = 4
