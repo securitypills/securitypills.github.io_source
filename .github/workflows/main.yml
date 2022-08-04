@@ -31,3 +31,4 @@ jobs:
           external_repository: securitypills/securitypills.github.io
           publish_branch: master
           publish_dir: ./public
+          CNAME: securitypills.news
