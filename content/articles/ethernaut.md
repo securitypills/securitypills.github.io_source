@@ -27,6 +27,7 @@ You can read a walkthrough for this challenge [here](../ethernaut-1-fallback).
 ### 0x2. Fallout
 This vulnerability is unlikely to occur on recent versions of Solidity. The problem with this contract is a typo in the `Fal1out` function, which can be called by anyone, thus becoming the contract's owner.
 
+You can read a walthrough for this challenge here
 ### 0x3. Coin Flip
 
 ### 0x4. Telephone
