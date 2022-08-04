@@ -24,7 +24,7 @@ theme = 'digitalgarden'
 	name = 'Newsletter'
 	url = '/portfolio'
 	weight = 3
-[[menu.main]]
-	name = 'Sponsor'
-	url = '/sponsor'
-	weight = 4
+#[[menu.main]]
+#	name = 'Sponsor'
+#	url = '/sponsor'
+#	weight = 4
