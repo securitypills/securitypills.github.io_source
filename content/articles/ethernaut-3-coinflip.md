@@ -135,7 +135,7 @@ interface CoinFlipInterface {
 
 These interfaces define which methods can be called from another contract, and we will use this in our `attack.py` script, which looks as follows:
 
-```solidity
+```solidity {lineos=table,hl_lines=[17,18,19,20,21],lineofstart=1}
 from brownie import accounts, config, interface, web3, CoinFlip, CoinFlipAttack
 
 def attack(target, hacker):
@@ -231,6 +231,6 @@ Transaction sent: 0x86c6605cc6f40cece54143ac4fe154421f4a979ef427fda6938b4222295a
   CoinFlipAttack.destroy confirmed   Block: 10723047   Gas used: 26179 (90.91%)
 ```
 
-## TakeAways
+## Takeaways
 
 It is important to remember that our code is publicly accessible once it has been deployed into the blockchain, and therefore, anyone can see our logic. Also, true randomness is near impossible to achieve in native Solidity, and the use of Oracles is highly recommended.
