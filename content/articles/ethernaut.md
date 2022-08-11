@@ -32,3 +32,8 @@ You can read a walkthrough for this challenge [here](../ethernaut-1-fallback).
 This vulnerability is unlikely to occur on recent versions of Solidity. The problem with this contract is a typo in the `Fal1out` function, which can be called by anyone, thus becoming the contract's owner.
 
 You can read a walkthrough for this challenge [here](../ethernaut-2-fallout).
+
+### 0x3 Coinflip
+The goal in this challenge is to guess the coin flip ten times in a row. The contract uses the previous blockhash as the flip outcome. This challenge can be solved by creating a similar contract that mimics the same coin flipping logic and calls Ethernaut's original contract with the result obtained.
+
+You can read a walkthrough for this challenge [here](../ethernaut-3-coinflip).
