@@ -34,7 +34,7 @@ According to Solidity’s documentation:
 
 This means that `tx.origin` will refers to the address of an account that sent a transaction, and `msg.sender` refers to the address of an account or a smart contract that is directly calling a smart contract’s function.
 
-{{<figure src="../images/txorigin-msgsender.png" caption="Image courtesy of OpenZeppelin">}}
+{{<figure src="../images/txorigin-msgsender.png" caption="`tx.origin` vs `msg.sender`">}}
 
 Based on the previous image, if `Account` calls `contract A` , and `contract A` calls `contract B`, in `contract B`, the value assigned to `msg.sender` will be `contract B` and the value assigned to `tx.origin` will be `Account`.
 
