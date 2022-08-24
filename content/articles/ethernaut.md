@@ -37,3 +37,8 @@ You can read a walkthrough for this challenge [here](../ethernaut-2-fallout).
 The goal in this challenge is to guess the coin flip ten times in a row. The contract uses the previous blockhash as the flip outcome. This challenge can be solved by creating a similar contract that mimics the same coin flipping logic and calls Ethernaut's original contract with the result obtained.
 
 You can read a walkthrough for this challenge [here](../ethernaut-3-coinflip).
+
+### 0x4 Telephone
+The idea behind this challnge is to call the `changeOwner` function from a smart contract. So `msg.sender` will be the helper contract address while `tx.origin` will always refers to the address who started the original transaction. Once `tx.origin != msg.sender` is true, you will become the contract's new owner.
+
+You can read a walkthrough for this challenge [here](../ethernaut-4-telephone).
