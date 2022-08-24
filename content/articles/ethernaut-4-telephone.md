@@ -105,4 +105,4 @@ Based on the explanation provided before the attack can be summarized in few ste
 - As `tx.origin` differs from `msg.sender`, our exploit will pass the `if` statement and execute the `owner = _owner;` statement, assigning us as the contract's legitimate owner
 
 ## Takeaways
-The most valuable takeaway from this challenge is to learn to do not use `tx.origin` for authorization purposes, additionally, by using `tx.origin` you are limiting interoperability between contracts, since contracts using `tx.origin` cannot be used by other contracts (*a contract can never be the `tx.origin`*). Instead, you should use `msg.sender` for authorization.
+The most valuable takeaway from this challenge is to learn to not use `tx.origin` for authorization purposes, additionally, by using `tx.origin` you are limiting interoperability between contracts, since contracts using `tx.origin` cannot be used by other contracts (*a contract can never be the `tx.origin`*). Instead, you should use `msg.sender` for authorization.
