@@ -42,3 +42,8 @@ You can read a walkthrough for this challenge [here](../ethernaut-3-coinflip).
 The idea behind this challnge is to call the `changeOwner` function from a smart contract. So `msg.sender` will be the helper contract address while `tx.origin` will always refers to the address who started the original transaction. Once `tx.origin != msg.sender` is true, you will become the contract's new owner.
 
 You can read a walkthrough for this challenge [here](../ethernaut-4-telephone).
+
+### 0x5 Token
+The goal in this contract is to increase our balance. Despite there is a requirement that checks for potential overflows (`require(balances[msg.sender] - _vaalue >= 0);`), we are dealing with unsigned integers which are known to be prone to overflow and underflow issues. To pass this challenge we will have to call the `transfer` method with an amount of tokens greater than 20.
+
+You can read aa walkthrough for this challenge [here](../ethernaut-5-token).
