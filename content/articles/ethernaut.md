@@ -46,4 +46,9 @@ You can read a walkthrough for this challenge [here](../ethernaut-4-telephone).
 ### 0x5 Token
 The goal in this contract is to increase our balance. Despite there is a requirement that checks for potential overflows (`require(balances[msg.sender] - _vaalue >= 0);`), we are dealing with unsigned integers which are known to be prone to overflow and underflow issues. To pass this challenge we will have to call the `transfer` method with an amount of tokens greater than 20.
 
-You can read aa walkthrough for this challenge [here](../ethernaut-5-token).
+You can read a walkthrough for this challenge [here](../ethernaut-5-token).
+
+### 0x6 Delegation
+This challenge consists of a delegation contract that forwards any calls using `delegatecall` in its `fallback` function to a `Delegate` contract. To complete this challenge we must get familiar with the `delegatecall` instruction and understand that the call performed heere is executed in the caller's context, thus the `Delegate` contract will access the `Delegation` owner storag evariable and `msg.sender`. To pass this challenge you simply need to call the `pwn()` function in th `Delegation` contract, despite it doesn't exist.
+
+You can read a walkthrough for this challenge [here](../ethernaut-6-delegation).
