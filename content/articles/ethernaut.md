@@ -53,7 +53,7 @@ This challenge consists of a delegation contract that forwards any calls using `
 
 You can read a walkthrough for this challenge [here](../ethernaut-6-delegation).
 
-### 0x7 Forcee
+### 0x7 Force
 The purpose of this challenge is to send ether to the contract. Sending ether to a contract requires a `fallback` function to be implemented, however, one can force-send ether by calling the `selfdestruct` instruction on a contract containing ether.
 
 You can read a walkthrough for this challenge [here](../ethernaut-7-force).
