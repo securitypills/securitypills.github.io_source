@@ -52,3 +52,8 @@ You can read a walkthrough for this challenge [here](../ethernaut-5-token).
 This challenge consists of a delegation contract that forwards any calls using `delegatecall` in its `fallback` function to a `Delegate` contract. To complete this challenge we must get familiar with the `delegatecall` instruction and understand that the call performed heere is executed in the caller's context, thus the `Delegate` contract will access the `Delegation` owner storage variable and `msg.sender`. To pass this challenge you simply need to call the `pwn()` function in th `Delegation` contract, despite it doesn't exist.
 
 You can read a walkthrough for this challenge [here](../ethernaut-6-delegation).
+
+### 0x7 Forcee
+The purpose of this challenge is to send ether to the contract. Sending ether to a contract requires a `fallback` function to be implemented, however, one can force-send ether by calling the `selfdestruct` instruction on a contract containing ether.
+
+You can read a walkthrough for this challenge [here](../ethernaut-7-force).
