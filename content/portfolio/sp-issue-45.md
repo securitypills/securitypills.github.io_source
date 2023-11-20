@@ -1,9 +1,9 @@
 ---
-title: Security Pills - Issue 39
-date: 2023-03-20
-description: 'Heuristics for smart contracts, Abusing HTTP Hop-by-hop headers, Bitcoin Address Clustering'
-newsletterurl: 'https://newsletter.securitypills.news/p/security-pills-issue-39'
+title: Security Pills - Issue 45
+date: 2023-11-13
+description: 'Everything Ill Forget About Prompting LLMs, Analysis of Obfuscations in Apple Fairplay, How Malicious Code Can Sneak Into Your GitHub Actions Workflows'
+newsletterurl: 'https://newsletter.securitypills.news/p/security-pills-issue-45'
 images: 
-- ./images/issue39.png
+- ./images/issue45.png
 
 --- 
